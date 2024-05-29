@@ -1,17 +1,22 @@
-body
+/* Laptop/Desktop/Large monitor styles */
+
+body, html
 {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #023104 0%, #81939f 100%);
 }
 .search-container
 {
-    position: absolute;
+    position: fixed;
     display: inline-block;
-    top: 20px;
-    right: 200px;
+    top: 10px;
+    right: 30px;
     display: flex;
-    z-index: 1000;
+    z-index: 1100;
+    border-radius: 60px;
 }
 .search-input
 {
@@ -37,10 +42,10 @@ nav
     grid-template-columns: repeat(4, auto);
     background: linear-gradient(to bottom, #023104 0%, #81939f 100%);
     border-radius: 20px;
-    margin: 70px;
     position: fixed;
-    width: 90%;
+    width: 100%;
     z-index: 1000;
+    padding: 0;
 }
 nav ul 
 {
@@ -57,7 +62,7 @@ nav ul li
 nav ul li a
 {
     display: block;
-    padding: 15px 30px;
+    padding: 20px 40px;
     text-decoration: none;
     color: rgb(249, 244, 244);
     font-family: Arial, sans-serif;
@@ -76,9 +81,9 @@ main
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 130px auto 0;
+    margin: 120px auto 0;
     width: 80%;
-    padding: 140px 20px;
+    padding: 130px 20px;
     border-radius: 20px;
     background-color: rgb(213, 233, 226);
     overflow-y: auto;
@@ -144,8 +149,8 @@ footer
     color: white;
     background: linear-gradient(to bottom, #023104 0%, #81939f 100%);
     border-radius: 20px;
-    width: 90%;
-    margin: 20px 70px 0 70px;
+    width: 100%;
+    
 }
 footer ul
 {
@@ -168,4 +173,19 @@ footer ul li a
     font-family: Arial, sans-serif;
     font-size: 15px;
     text-align: center;
+}
+
+/* Tablet styles */
+
+@media only screen and (max-width: 768px)
+{
+    nav ul li a
+{
+    padding: 20px 10px;
+    
+}
+.search-container
+{
+    display: none;
+}
 }
