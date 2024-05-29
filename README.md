@@ -1,11 +1,11 @@
 # PeaceLand Coffee Shop
 
 ## Table of Contents
-*About*
-*Features*
-*Usage*
-*Contributing*
-*License*
+- *About*
+- *Features*
+- *Usage*
+- *Contributing*
+- *License*
 
 ## About
 PeaceLand Coffee Shop is a fictional coffee shop project designed to showcase a variety of menu items, including breakfast, dessert, lunch, and beverages.
