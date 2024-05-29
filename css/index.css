@@ -1,12 +1,171 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #023104 0%, #81939f 100%);
+}
+.search-container
+{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    right: 200px;
+    display: flex;
+    z-index: 1000;
+}
+.search-input
+{
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.search-button
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+nav
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    background: linear-gradient(to bottom, #023104 0%, #81939f 100%);
+    border-radius: 20px;
+    margin: 70px;
+    position: fixed;
+    width: 90%;
+    z-index: 1000;
+}
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li
+{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a
+{
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: rgb(249, 244, 244);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+nav ul li a:hover
+{
+    border: 1px solid rgb(18, 62, 32);
+    border-radius: 10px;
+    background-color: rgb(18, 62, 32);
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto 0;
+    width: 80%;
+    padding: 140px 20px;
+    border-radius: 20px;
+    background-color: rgb(213, 233, 226);
+    overflow-y: auto;
+}
+#head
+{
+    text-align: center;
+}
 h1
 {
-color:rgb(4, 65, 45);
-font-size: 30px;
-text-align: center;
-padding-top: 20px;
+    margin-top: -100px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: rgb(46, 3, 3);
+}
+#head h2
+{
+    margin: 0px;
+    padding-top: 1%;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(46, 3, 3);
+}
+.menu-details 
+{
+    margin-bottom: 100px;
+}
+.menu-details ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+.menu-details .title
+{
+    float: left;
+    width: 60%;
+}
+.menu-details .price
+{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.menu-details h3 
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.beverage-details h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.beverage-details a
+{
+    text-decoration: none;
+    margin-right: 50px;
 }
 footer
 {
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to bottom, #023104 0%, #81939f 100%);
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px 70px 0 70px;
+}
+footer ul
+{
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+footer ul li
+{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+}
+footer ul li a
+{
+    display: block;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: rgb(249, 244, 244);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
 }

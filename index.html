@@ -6,33 +6,103 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     </head>
 
     <body>
         <header>
-            <h1> PeaceLand Coffee Shop </h1>
-            <h5> Where every cup is a celebration of taste and tradition.</h5>
+            <div class="search-container"> 
+                <form action="/search" method="GET"> 
+                    <input type="text" id="search" class="search-input" placeholder="Search" required pattern="[a-zA-Z0-9]" >
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i>  </button> 
+                </form>
+            </div>   
         </header>
         <nav>
-            <a href="#"> Home </a>
-            <a href="#"> Menu </a>
-            <a href="#"> About Us </a>
-            <a href="#"> Contact Us </a>
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> Menu </a> </li>
+                <li> <a href="#"> About Us </a> </li>
+                <li> <a href="#"> Locations </a> </li>
+                <li> <a href="#"> Contact Us </a> </li>    
+                <li> <a href="#"> <i class="fas fa-question-circle"></i> </a> </li>
+            </ul>    
         </nav>
         <main>
-            <section id="Products">
-                <h3>Products</h3>
-                <ul>
-
-                </ul>
+            <section id="head">
+                <h1> Welcome to PeaceLand Coffee Shop </h1>
+                <h2> Where every cup is a celebration of taste and tradition.</h2>
+            </section>
+            <section id="menu">
+                <h2> Our Menu </h2>
+                <div class="menu-details">
+                    <h3> Breakfast </h3>
+                    <ul>
+                        <div class="title">
+                            <li> Omlette </li>
+                            <li> French Fries </li>
+                            <li> Scrambled Eggs </li>
+                        </div>
+                        <div class="price">
+                            <li> 5.00$ </li>
+                            <li> 2.50$ </li>
+                            <li> 13.00$ </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="menu-details">
+                    <h3> Dessert </h3>
+                    <ul>
+                        <div class="title">
+                            <li> Donut </li>
+                            <li> Cheese Cake </li>
+                            <li> Tiramisu </li>
+                        </div>
+                        <div class="price">
+                            <li> 1.00$ </li>
+                            <li> 2.50$ </li>
+                            <li> 3.00$ </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="menu-details">
+                    <h3> Lunch </h3>
+                    <ul>
+                        <div class="title">
+                            <li> Burger </li>
+                            <li> Sandwich </li>
+                            <li> Family Combo </li>
+                        </div>
+                        <div class="price">
+                            <li> 15.00$ </li>
+                            <li> 22.50$ </li>
+                            <li> 33.00$ </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="beverage-details">
+                    <h3> Beverage </h3>
+                    <a href="#" id="hot-link">Hot Beverages</a>
+                    <a href="#" id="cold-link">Cold Beverages</a>
+                </div>
+                <ul id="beverage-list"></ul>
             </section>
 
         </main>
 
         <footer>
             <p> &copy; 2024 PeaceLand Coffee Shop </p>
+            <ul>
+                <li> <a href="#"> Accessibility </a> </li>
+                <li> <a href="#">  Privacy Policy</a> </li>
+                <li> <a href="#"> Terms of Use </a> </li>
+                <li> <a href="#"> Terms and Conditions </a> </li>
+                <li> <a href="#"> Site Map </a> </li>
+                <li> <a href="#"> Cookie Preferences </a> </li>    
+            </ul>   
 
         </footer>
-        <script src="js/index.js"></script>
+        <script src="js/index.js">
+        </script>
     </body>
 </html>
